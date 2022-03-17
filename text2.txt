@@ -1,0 +1,247 @@
+归约式：factor → id
+三地址代码：t0 = a
+归约式：term → factor 
+三地址代码：t1 = t0
+归约式：exp → term 
+三地址代码：t2 = t1
+---------------------1号语句Error！
+
+归约式：factor → id
+三地址代码：t0 = a
+归约式：term → factor 
+三地址代码：t1 = t0
+归约式：exp → term 
+三地址代码：t2 = t1
+归约式：addop → + 
+归约式：factor → num
+三地址代码：t3 = 1236.1E5
+归约式：term → factor 
+三地址代码：t4 = t3
+归约式：exp → exp addop term 
+三地址代码：t5 = t2 + t4
+归约式：addop → + 
+归约式：factor → id
+三地址代码：t6 = b
+归约式：term → factor 
+三地址代码：t7 = t6
+归约式：mulop → /
+归约式：factor → num
+三地址代码：t8 = 5
+归约式：term → term mulop factor 
+三地址代码：t9 = t7 / t8
+归约式：exp → exp addop term 
+三地址代码：t10 = t5 + t9
+归约式：addop → + 
+归约式：factor → id
+三地址代码：t11 = a
+归约式：term → factor 
+三地址代码：t12 = t11
+归约式：mulop → * 
+归约式：factor → num
+三地址代码：t13 = 2
+归约式：term → term mulop factor 
+三地址代码：t14 = t12 * t13
+归约式：exp → exp addop term 
+三地址代码：t15 = t10 + t14
+归约式：statmt → id = exp 
+三地址代码：B = t15
+---------------------2号语句Right！
+
+归约式：factor → id
+三地址代码：t0 = a
+归约式：term → factor 
+三地址代码：t1 = t0
+归约式：exp → term 
+三地址代码：t2 = t1
+---------------------3号语句Error！
+
+归约式：factor → id
+三地址代码：t0 = a
+归约式：term → factor 
+三地址代码：t1 = t0
+归约式：exp → term 
+三地址代码：t2 = t1
+归约式：addop → + 
+归约式：factor → num
+三地址代码：t3 = 123
+归约式：term → factor 
+三地址代码：t4 = t3
+归约式：exp → exp addop term 
+三地址代码：t5 = t2 + t4
+归约式：factor → (exp)
+三地址代码：t6 = t5
+归约式：term → factor 
+三地址代码：t7 = t6
+归约式：mulop → * 
+归约式：factor → id
+三地址代码：t8 = b
+归约式：term → term mulop factor 
+三地址代码：t9 = t7 * t8
+归约式：exp → term 
+三地址代码：t10 = t9
+归约式：statmt → id = exp 
+三地址代码：D = t10
+---------------------4号语句Right！
+
+归约式：factor → id
+三地址代码：t0 = a
+归约式：term → factor 
+三地址代码：t1 = t0
+归约式：exp → term 
+三地址代码：t2 = t1
+归约式：addop → - 
+归约式：factor → num
+三地址代码：t3 = 2
+归约式：term → factor 
+三地址代码：t4 = t3
+归约式：mulop → /
+归约式：factor → num
+三地址代码：t5 = 3
+归约式：term → term mulop factor 
+三地址代码：t6 = t4 / t5
+归约式：exp → exp addop term 
+三地址代码：t7 = t2 - t6
+归约式：addop → + 
+归约式：factor → num
+三地址代码：t8 = 5
+归约式：term → factor 
+三地址代码：t9 = t8
+归约式：mulop → * 
+归约式：factor → num
+三地址代码：t10 = 2
+归约式：term → term mulop factor 
+三地址代码：t11 = t9 * t10
+归约式：exp → exp addop term 
+三地址代码：t12 = t7 + t11
+归约式：statmt → id = exp 
+三地址代码：E = t12
+---------------------5号语句Right！
+
+归约式：factor → id
+三地址代码：t0 = a
+归约式：term → factor 
+三地址代码：t1 = t0
+归约式：exp → term 
+三地址代码：t2 = t1
+归约式：addop → + 
+归约式：factor → id
+三地址代码：t3 = b
+归约式：term → factor 
+三地址代码：t4 = t3
+归约式：exp → exp addop term 
+三地址代码：t5 = t2 + t4
+归约式：addop → + 
+归约式：factor → id
+三地址代码：t6 = c
+归约式：term → factor 
+三地址代码：t7 = t6
+归约式：exp → exp addop term 
+三地址代码：t8 = t5 + t7
+归约式：addop → - 
+归约式：factor → id
+三地址代码：t9 = f
+归约式：term → factor 
+三地址代码：t10 = t9
+归约式：exp → exp addop term 
+三地址代码：t11 = t8 - t10
+归约式：statmt → id = exp 
+三地址代码：F = t11
+---------------------6号语句Right！
+
+归约式：factor → id
+三地址代码：t0 = b
+归约式：term → factor 
+三地址代码：t1 = t0
+归约式：exp → term 
+三地址代码：t2 = t1
+归约式：addop → + 
+归约式：factor → id
+三地址代码：t3 = c
+归约式：term → factor 
+三地址代码：t4 = t3
+归约式：mulop → * 
+归约式：factor → num
+三地址代码：t5 = 3
+归约式：term → term mulop factor 
+三地址代码：t6 = t4 * t5
+归约式：exp → exp addop term 
+三地址代码：t7 = t2 + t6
+归约式：factor → (exp)
+三地址代码：t8 = t7
+归约式：term → factor 
+三地址代码：t9 = t8
+归约式：exp → term 
+三地址代码：t10 = t9
+归约式：addop → + 
+归约式：factor → id
+三地址代码：t11 = c
+归约式：term → factor 
+三地址代码：t12 = t11
+归约式：mulop → * 
+归约式：factor → id
+三地址代码：t13 = d
+归约式：term → term mulop factor 
+三地址代码：t14 = t12 * t13
+归约式：exp → exp addop term 
+三地址代码：t15 = t10 + t14
+归约式：statmt → id = exp 
+三地址代码：G = t15
+---------------------7号语句Right！
+
+---------------------8号语句Error！
+
+归约式：factor → id
+三地址代码：t0 = b
+归约式：term → factor 
+三地址代码：t1 = t0
+归约式：exp → term 
+三地址代码：t2 = t1
+归约式：addop → + 
+归约式：factor → num
+三地址代码：t3 = 2
+归约式：term → factor 
+三地址代码：t4 = t3
+归约式：mulop → * 
+归约式：factor → num
+三地址代码：t5 = 3
+归约式：term → term mulop factor 
+三地址代码：t6 = t4 * t5
+归约式：exp → exp addop term 
+三地址代码：t7 = t2 + t6
+归约式：addop → + 
+归约式：factor → num
+三地址代码：t8 = 5
+归约式：term → factor 
+三地址代码：t9 = t8
+归约式：mulop → /
+---------------------9号语句Error！
+
+归约式：factor → num
+三地址代码：t0 = 1
+归约式：term → factor 
+三地址代码：t1 = t0
+归约式：exp → term 
+三地址代码：t2 = t1
+归约式：addop → + 
+归约式：factor → num
+三地址代码：t3 = 2
+归约式：term → factor 
+三地址代码：t4 = t3
+归约式：exp → exp addop term 
+三地址代码：t5 = t2 + t4
+归约式：addop → + 
+归约式：factor → num
+三地址代码：t6 = 2
+归约式：term → factor 
+三地址代码：t7 = t6
+归约式：mulop → * 
+归约式：factor → num
+三地址代码：t8 = 3
+归约式：term → term mulop factor 
+三地址代码：t9 = t7 * t8
+归约式：exp → exp addop term 
+三地址代码：t10 = t5 + t9
+归约式：statmt → id = exp 
+三地址代码：I = t10
+---------------------10号语句Right！
+

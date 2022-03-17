@@ -1,0 +1,68 @@
+nextToken = test
+
+Error!
+
+nextToken = 
+nextToken = j
+
+Error!
+
+nextToken = 
+nextToken = d
+
+Error!
+
+nextToken = 
+nextToken = A
+
+Error!
+
+nextToken = 
+nextToken = B
+
+Error!
+
+nextToken = 
+nextToken = C
+
+Error!
+
+nextToken = 
+nextToken = D
+
+Error!
+
+nextToken = 
+nextToken = E
+
+Error!
+
+nextToken = 
+nextToken = F
+
+Error!
+
+nextToken = 
+nextToken = G
+
+Error!
+
+nextToken = 
+nextToken = c
+
+Error!
+
+nextToken = 
+nextToken = H
+
+Error!
+
+nextToken = 
+nextToken = I
+
+Error!
+
+nextToken = 
+
+Error!
+
